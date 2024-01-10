@@ -20,7 +20,6 @@ body {
 
 .header {
   display: flex;
-  padding-inline-start: unset;
 }
 .star {
   width: 1.5rem;
@@ -96,7 +95,7 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   body {
     background-image: url(../assets/images/background-pattern-mobile.svg);
   }
@@ -106,21 +105,20 @@ body {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   body {
     background-image: url(../assets/images/background-pattern-desktop.svg);
   }
-  /* .container {
-    margin-block: 8rem;
-  } */
-  .header {
-    padding-inline-start: 2rem;
+  .container {
+    /* margin-block: 8rem; */
+    padding: 2.5rem;
   }
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .star {
-    width: 3rem;
+    width: 2rem;
+    padding: 1rem;
   }
   .accordion-title {
     font-size: 1.5rem;
